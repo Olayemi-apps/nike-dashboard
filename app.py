@@ -8,7 +8,7 @@ import pandas as pd
 font_awesome = "https://use.fontawesome.com/releases/v5.10.2/css/all.css"
 
 
-shoes = pd.read_csv('data/shoes_dataset_updated.csv')
+shoes = pd.read_csv('https://raw.githubusercontent.com/Olayemi-apps/nike-dashboard/main/data/shoes_dataset_updated.csv')
 
 # Best_selling_region = shoes.groupby(['Date'])[['Re_Sale_Price', 'Buyer_Region']].sum().reset_index()
 best_selling_region = shoes.groupby(['year', 're_sale_price'], as_index=True).agg({'buyer_region': ' '.join})
