@@ -1,0 +1,175 @@
+
+body {
+  background-color: #CDD1C4;
+  margin: 5%;
+}
+
+#title {
+  text-align: center;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_2, H6, P {
+  text-align: center;
+}
+
+.logo_container img{
+  height: auto;
+  align: center;
+}
+
+.container_2_text_box {
+  border-radius: 5px;
+  background-color: #010915;
+  margin: 18px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 2px 2px 2px #010915;
+}
+
+.container_2 {
+  border-radius: 5px;
+  background-color: #010915;
+  margin: 18px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 2px 2px 2px #010915;
+}
+
+.container_2 H6, P {
+  justify-content: center;
+}
+
+
+.new_label {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: calc(100%-40px);
+}
+
+/* 2nd Row */
+
+.dcc_comp {
+     margin: 0;
+     padding: 5px;
+     width: calc(100%-40px);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  height: $card-height;
+  word-wrap: break-word;
+  background-color: $card-bg;
+  background-clip: border-box;
+  border: $card-border-width solid $card-border-color;
+  @include border-radius($card-border-radius);
+
+  > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  > .list-group {
+    border-top: inherit;
+    border-bottom: inherit;
+
+    &:first-child {
+      border-top-width: 0;
+      @include border-top-radius($card-inner-border-radius);
+    }
+
+    &:last-child  {
+      border-bottom-width: 0;
+      @include border-bottom-radius($card-inner-border-radius);
+    }
+  }
+
+  // Due to specificity of the above selector (`.card > .list-group`), we must
+  // use a child selector here to prevent double borders.
+  > .card-header + .list-group,
+  > .list-group + .card-footer {
+    border-top: 0;
+  }
+}
+
+
+
+
+/* Site Attributes */
+.Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control{
+    background-color: #F2743C;
+    color: white;
+}
+
+.Select-control{
+    border: 0.5px solid #F2743C;
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>
+ .Select-control .Select-value .Select-value-label{
+    color: white;
+}
+
+.Select-arrow {
+    border-color: #010915 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 2.5px;
+    height: 0;
+    width: 0;
+    position: relative;
+}
+
+.Select-clear-zone {
+    -webkit-animation: Select-animation-fadeIn .2s;
+    -o-animation: Select-animation-fadeIn .2s;
+    animation: Select-animation-fadeIn .2s;
+    color: #010915;
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    width: 17px;
+}
+
+.rc-slider-mark-text-active {
+    color: white;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px !important;
+  display: block !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CDD1C4 !important;
+  border-radius: 10px !important;
+  display: block !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #010915;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   /*background: #192444;*/
+  background: white !important;
+}
+
+
+
+
